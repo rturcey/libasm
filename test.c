@@ -48,11 +48,11 @@ int main(int argc, char **argv)
 
     printf("%d\n", atoi("00000"));
     test = malloc(sizeof(t_list));
-    test->data = "elt 4";
+    test->data = "elt 12";
     test->next = NULL;
-    ft_list_push_front(&test, "elt 3");
-    ft_list_push_front(&test, "elt 2");
-    ft_list_push_front(&test, "elt 1");
+    ft_list_push_front(&test, "elt 73");
+    ft_list_push_front(&test, "elt 28");
+    ft_list_push_front(&test, "elt 32");
     t_list  *tmp;
     tmp = test;
     while (test)
@@ -62,7 +62,7 @@ int main(int argc, char **argv)
     }
     test = tmp;
     printf("Let's sort !\n");
-    printf("%d\n", ft_list_sort(&test, &strcmp));
+    ft_list_sort(&test, &strcmp);
     while (test)
     {
         printf("DATA = %s\n", test->data);
