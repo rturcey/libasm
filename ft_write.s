@@ -2,7 +2,7 @@ section .text
         global ft_write
 
 ft_write:
-        mov     eax, 1
+        mov     rax, 1
         syscall
         cmp     rax, 0
         jl      error

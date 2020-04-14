@@ -9,6 +9,7 @@
 
 int main(int argc, char **argv)
 {
+    t_list  *test = NULL;
     (void)argc;
     printf("Len is %d\n", ft_strlen(argv[1]));
     char dst[100];
@@ -46,5 +47,27 @@ int main(int argc, char **argv)
     printf("7 ft_atoi_base Ret = %d\n", ft_atoi_base("1100", "01"));
 
     printf("%d\n", atoi("00000"));
+    test = malloc(sizeof(t_list));
+    test->data = "elt 4";
+    test->next = NULL;
+    ft_list_push_front(&test, "elt 3");
+    ft_list_push_front(&test, "elt 2");
+    ft_list_push_front(&test, "elt 1");
+    t_list  *tmp;
+    tmp = test;
+    while (test)
+    {
+        printf("DATA = %s\n", test->data);
+        test = test->next;
+    }
+    test = tmp;
+    printf("Let's sort !\n");
+    printf("%d\n", ft_list_sort(&test, &strcmp));
+    while (test)
+    {
+        printf("DATA = %s\n", test->data);
+        test = test->next;
+    }
+    test = tmp;
     return (0);
 }

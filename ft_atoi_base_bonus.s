@@ -110,5 +110,5 @@ done:
         ret
 
 error:
-        mov     rax, -1
+        mov     rax, 0
         ret
