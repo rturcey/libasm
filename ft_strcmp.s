@@ -3,6 +3,7 @@ section .text
 
 ft_strcmp:
         mov     rcx, 0
+        mov     rax, 0
 
 compare:
         mov     dl, [rsi]

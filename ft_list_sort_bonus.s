@@ -9,6 +9,7 @@ ft_list_sort:
 		mov		r10, rdi
 		mov		rdi, [rdi]
 		mov		rbx, rsi
+		push	rbx
 		jmp		sort
 
 invert:
@@ -34,4 +35,5 @@ sort:
 
 done:
 		mov		rdi, r10
+		pop		rbx
 		ret
