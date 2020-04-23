@@ -6,7 +6,7 @@ OBJS		= $(SRCS:.s=.o)
 OBJS_BONUS	= $(SRCS_BONUS:.s=.o)
 
 CC			= clang
-CFLAGS		= -Wall -Wextra -Werror 
+CFLAGS		= -Wall -Wextra -Werror
 
 NA			= nasm
 NAFLAGS		= -f elf64
@@ -40,5 +40,6 @@ clean :
 
 fclean :	clean
 			rm -f $(NAME) $(EXEC) $(EXEC_BONUS)
+			rm -f 1.txt 2.txt
 
 re :		fclean all

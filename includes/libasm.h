@@ -6,7 +6,7 @@
 /*   By: rturcey <rturcey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 11:56:26 by rturcey           #+#    #+#             */
-/*   Updated: 2020/04/21 12:06:03 by rturcey          ###   ########.fr       */
+/*   Updated: 2020/04/22 10:06:02 by rturcey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # include <sys/stat.h>
 # include <fcntl.h>
 # include <stdlib.h>
+# include <errno.h>
 
 typedef struct	s_list
 {
